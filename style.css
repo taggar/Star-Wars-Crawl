@@ -1,0 +1,42 @@
+body {
+    position: relative;
+    background-color: black;
+}
+
+div.container {
+    position: absolute;
+    color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    height: 500px;
+    width: 50%;
+    margin: 0 25%;
+    transform: perspective(300px) rotateX(25deg);
+    overflow: hidden;
+    box-shadow: 1em 0 .4em yellow, -1em 0 .4em yellow;
+}
+
+div.lorem {
+    position: absolute;
+    top: 100%;
+    max-width: 100%;
+    animation-name: scroll;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+        color: red;
+    }
+    100% {
+        top: -1000%;
+        color: green;
+    }
+}
