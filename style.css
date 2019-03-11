@@ -16,10 +16,19 @@ div.container {
     box-shadow: 1em 0 .4em yellow, -1em 0 .4em yellow;
 }
 
+p {
+    padding: 0 1em;
+}
+
+.credit {
+    font-weight: bold;
+}
+
 div.lorem {
     position: absolute;
+    word-wrap: break-word;
     top: 100%;
-    max-width: 100%;
+    width: 100%;
     animation-name: scroll;
     animation-duration: 60s;
     animation-timing-function: linear;
@@ -33,7 +42,7 @@ div.lorem {
 @keyframes scroll {
     0% {
         top: 100%;
-        color: red;
+        color: yellow;
     }
     100% {
         top: -1000%;
